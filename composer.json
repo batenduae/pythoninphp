@@ -1,0 +1,41 @@
+{
+    "name": "batenduae/pythoninphp",
+    "description": "This package can give you helper functions to run python files right from PHP.",
+    "keywords": [
+        "batenduae",
+        "pythoninphp"
+    ],
+    "homepage": "https://github.com/batenduae/pythoninphp",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Abdul Baten",
+            "email": "batenduae@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|8.0|8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "batenduae\\Pythoninphp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "batenduae\\Pythoninphp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
